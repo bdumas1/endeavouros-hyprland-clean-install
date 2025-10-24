@@ -1,22 +1,12 @@
-# EndeavourOS Hyprland Clean Install
+# My EndeavourOS Hyprland Clean Install
 
-## First commands
-```bash
-sudo pacman -S hyprland kitty sddm nvim zsh yay
-yay -S pipewire pipewire-pulse pavucontrol xdg-desktop-portal-hyprland thunar nwg-look arc-gtk-theme-eos rofi-wayland waybar network-manager-applet dunst
-sudo systemctl enable sddm.service
-sudo systemctl start sddm.service
-```
+I use [EndeavourOS](https://endeavouros.com) with [Hyprland](https://hypr.land) installed with [end-4 dotfiles](https://github.com/end-4/dots-hyprland).
 
-## Start Pipewire
-```bash
-systemctl --user start pipewire
-systemctl --user start pipewire-pulse
-```
+## Installation
 
-## Put in the Hyprland conf exec-once
-- dbus-update-activation-environment --systemd WAYLAND_DISPLAY XDG_CURRENT_DESKTOP
-- waybar
-- nm-applet
+- Install [EndeavourOS](https://endeavouros.com) from their iso file
+- Select the Gnome environment by default
+- Then, [end-4](https://github.com/end-4/dots-hyprland) recommands to use this command to install everything with Hyprland: `bash <(curl -s https://ii.clsty.link/setup)`
 
-
+- After login on Hyprland, clone my [dotfiles](https://github.com/bdumas1/dotfiles)
+- Run `./install`. This script will normally link the `hypr/custom` folder from this dotfiles repo to `~/.config/hypr/custom`
