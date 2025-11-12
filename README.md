@@ -10,11 +10,3 @@ I use [EndeavourOS](https://endeavouros.com) with [Hyprland](https://hypr.land) 
 
 - After login on Hyprland, clone my [dotfiles](https://github.com/bdumas1/dotfiles)
 - Run `./install`. This script will normally link the `hypr/custom` folder from this dotfiles repo to `~/.config/hypr/custom`
-
-### Add outfoxxed/hy3
-
-```bash
-hyprpm update
-hyprpm add https://github.com/outfoxxed/hy3
-hyprpm enable hy3
-```
